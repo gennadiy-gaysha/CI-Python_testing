@@ -17,6 +17,11 @@ class Student:
     def full_name(self):
         return f"{self._first_name} {self._last_name}"
 
+    def alert_santa(self):
+        self.naughty_list = True
 
-student = Student("John", "Makler")
-print(student._start_date, student.full_name, student._end_date)
+    @property
+    def email(self):
+        firs_name_lower = self._first_name.lower()
+        last_name_lower = self._last_name.lower()
+        return (f"{firs_name_lower}.{last_name_lower}@email.com")
