@@ -22,6 +22,4 @@ class Student:
 
     @property
     def email(self):
-        firs_name_lower = self._first_name.lower()
-        last_name_lower = self._last_name.lower()
-        return (f"{firs_name_lower}.{last_name_lower}@email.com")
+        return (f"{self._first_name.lower()}.{self._last_name.lower()}@email.com")
