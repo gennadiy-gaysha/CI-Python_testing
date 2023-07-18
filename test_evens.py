@@ -3,6 +3,9 @@ from evens import even_number_of_evens
 # our class needs to inherit  from the unittest.TestCase class
 
 
+# unittest.TestCase is the base class that the TestEvens class inherits from.
+# unittest.TestCase is a class provided by the unittest module in Python's standard
+# library. It is a fundamental class for creating test cases in unit testing.
 class TestEvens(unittest.TestCase):
     # Calling the assertRaises method  from TestCase and when the test is run
     # it checks to see if a TypeError is raised  when the function is called with the value
